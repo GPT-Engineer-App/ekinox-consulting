@@ -4,8 +4,8 @@ import { FaSun, FaMoon, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa
 const Index = () => {
   const { toggleColorMode } = useColorMode();
   const colorModeIcon = useColorModeValue(<FaMoon />, <FaSun />);
-  const bgColor = useColorModeValue("gray.100", "gray.900");
-  const textColor = useColorModeValue("gray.800", "white");
+  const bgColor = useColorModeValue("brand.100", "brand.900");
+  const textColor = useColorModeValue("brand.800", "white");
 
   return (
     <Container maxW="container.xl" p={4} bg={bgColor} color={textColor}>
@@ -34,10 +34,10 @@ const Index = () => {
           </Heading>
           <VStack spacing={4} align="stretch">
             <Box>
-              <Heading as="h3" size="md">
+              <Heading as="h3" size="md" color="teal.500">
                 Moovance
               </Heading>
-              <Text>Moovance is a groundbreaking startup in the greentech industry, focusing on sustainable solutions for a better future.</Text>
+              <Text color="teal.500">Moovance is a groundbreaking startup in the greentech industry, focusing on sustainable solutions for a better future.</Text>
               <Image src="https://images.unsplash.com/photo-1557804506-669a67965ba0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxncmVlbnRlY2glMjBzdGFydHVwfGVufDB8fHx8MTcxNzYyMDI2NXww&ixlib=rb-4.0.3&q=80&w=1080" alt="Moovance" borderRadius="md" />
             </Box>
           </VStack>
