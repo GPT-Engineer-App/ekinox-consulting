@@ -1,4 +1,5 @@
 import { Container, Box, VStack, HStack, Text, Heading, Button, Image, IconButton, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import Navigation from "../components/Navigation.jsx";
 import { FaSun, FaMoon, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 
 const Index = () => {
@@ -9,6 +10,7 @@ const Index = () => {
 
   return (
     <Container maxW="container.xl" p={4} bg={bgColor} color={textColor}>
+      <Navigation />
       <Box textAlign="right">
         <IconButton aria-label="Toggle Color Mode" icon={colorModeIcon} onClick={toggleColorMode} />
       </Box>
